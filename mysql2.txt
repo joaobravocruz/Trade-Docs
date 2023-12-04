@@ -1,11 +1,15 @@
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'T3760S' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'T3760S' WITH GRANT OPTION;
-UPDATE mysql.user SET Password = OLD_PASSWORD('T3760S') WHERE Host = '%' AND User = 'root';
-UPDATE mysql.user SET Password = OLD_PASSWORD('T3760S') WHERE Host = 'localhost' AND User = 'root';
-GRANT ALL PRIVILEGES ON *.* TO 'webtrade'@'%' IDENTIFIED BY 'T3760S' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON *.* TO 'webtrade'@'localhost' IDENTIFIED BY 'T3760S' WITH GRANT OPTION;
-UPDATE mysql.user SET Password = PASSWORD('T3760S') WHERE Host = '%' AND User = 'webtrade';
-UPDATE mysql.user SET Password = PASSWORD('T3760S') WHERE Host = 'localhost' AND User = 'webtrade';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY '123456' WITH GRANT OPTION;
+UPDATE mysql.user SET Password = OLD_PASSWORD('123456') WHERE Host = '%' AND User = 'root';
+UPDATE mysql.user SET Password = OLD_PASSWORD('123456') WHERE Host = 'localhost' AND User = 'root';
+GRANT ALL PRIVILEGES ON *.* TO 'webtrade'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'webtrade'@'localhost' IDENTIFIED BY '123456' WITH GRANT OPTION;
+UPDATE mysql.user SET Password = PASSWORD('123456') WHERE Host = '%' AND User = 'webtrade';
+UPDATE mysql.user SET Password = PASSWORD('123456') WHERE Host = 'localhost' AND User = 'webtrade';
 FLUSH PRIVILEGES;
 CREATE USER 'replica'@'%' IDENTIFIED BY 'replica';
 GRANT REPLICATION SLAVE,SUPER,RELOAD ON *.* TO replica@'%' IDENTIFIED BY 'replica';
+
+#=====================================================
+#   Substituir 123456 pela senha padrão do mysql
+#=====================================================
