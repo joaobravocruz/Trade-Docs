@@ -1,0 +1,18 @@
+# This is the network config written by 'trade system'
+network:
+  renderer: networkd
+  ethernets:
+    enp2s0: # Alterar o nome da placa de rede
+      dhcp4: no
+      dhcp6: no
+      addresses: [192.168.15.230/24] # Colocar o ip desejado
+      routes:
+        - to: default
+          via: 192.168.15.1 # colocar o ip do GATEWAY
+      nameservers:
+        addresses: [8.8.8.8,8.8.4.4] # Colocar o DNS desejado ou deixar com os DNS do google
+  version: 2
+
+
+
+# ip addr

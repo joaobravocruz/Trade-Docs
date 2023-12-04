@@ -1,0 +1,41 @@
+sudo apt-get install samba
+
+sudo nano /etc/samba/smb.conf
+ir até Global a baixo do Workgroup e colar:
+socket options = TCP_NODELAY SO_RCVBUF=8192 SO_SNDBUF=8192
+
+logo ir até o final do arquivo e colar:
+
+[Sistemas]
+    available = yes
+    browseable = yes
+    path = /usr/sistemas
+    public = yes
+    force create mode = 777
+    force directory mode = 2775
+    writable = yes
+
+[www]
+    available = yes
+    browseable = yes
+    path = /var/www
+    public = yes
+    force create mode = 777
+    force directory mode = 1775
+    writable = yes
+
+[SIACWIN]
+    available = yes
+    browseable = yes
+    path = /usr/sistemas/SIACWIN
+    public = yes
+    force create mode = 777
+    force directory mode = 2775
+    writable = yes
+
+
+Criar pastas:
+sudo mkdir /usr/sistemas
+sudo mkdir /var/www
+sudo mkdir /usr/sistemas/SIACWIN
+sudo chmod 777 -R /usr/sistemas

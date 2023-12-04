@@ -1,0 +1,36 @@
+O sistema deve estar atualizado e deve ter o arquivo 'teftrade.exe' dentro da pasta c:\siacwin\
+Configurar o numero do terminal no arquivo c:\siacwin\fcwin.ini 
+[MAIN]
+TERMINAL_TEF=IGUAL AO NUMERO DO TERMINAL
+========================================================================================== 
+Entrar nas condições e colocar na pasta do tef exemplos:
+ 
+DEBITO A VISTA
+LINX:DAV
+
+DEBITO BANRI 30 DIAS
+LINX:DPR
+COLOCAR NAS PARCELAS 1/1 E NOS DIAS 30 
+
+CREDITO A VISTA
+LINX:CAV
+
+CREDITO PARCELADO LOJA
+LINX:CFL
+
+CREDITO PARCELADO ADMINSTRADORA
+LINX:CFA
+
+ALIMENTACAO
+LINX:VAV
+==========================================================================================
+Restaurante Touch
+FCWIN.INI
+COMMAND$=0TNP
+==========================================================================================
+PORTA_PINPAD=6 para quem tem pix 
+PIX: CHAVE PIX DA PESSOA.
+(se for telefone colocar +5553 mais número da pessoa) 
+=============================================================
+
+0800 729 3107 Opção 2

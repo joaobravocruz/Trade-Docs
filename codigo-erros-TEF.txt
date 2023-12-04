@@ -1,0 +1,70 @@
+Código	Mensagem apresentada no PDV	Descrição
+0000	Transação OK	Aprovada, Transação executada
+0001	1	Ligar para o emissor do cartão
+0003	03 Estab. Inval	Estabelecimento Comercial inválido
+0005	5	Transação negada pelo emissor (do not honor)
+0006	06 Refaça Trans	Erro
+0012	12 Trans. Inval.	Transação Inválida
+0013	13 Valor Inval.	Valor da Transação Inválido
+0014	14 Probl.cartão	Cartão Inválido
+0015	15 Probl.cartão	Instituição Não Cadastrada
+0016	Transação Não Localizada	Ocorre quando é enviada uma transação com dependência
+0017	Operação Não Permitida	Tentativa de executar uma operação não habilitada ou configurada,
+0018	Mensagem Inválida Pdv	Ocorre quando o D-TEF recebe uma mensagem fora do
+0019	19 Refaça Trans.	Refaça a Transação
+0020	20 Refaça Trans.	Resposta Inválida
+0021	Terminal Inativo	Terminal PDV ou POS inativado.
+0022	Loja Suspensa	Ocorre quando a loja configurada no Client D-POS está
+0023	Bandeira Bloqueada	Ocorre porque a bandeira encontra-se bloqueada no DTEF
+0024	CNPJ Inválido	Ocorre quando o CNPJ da loja configurada no Client DPOS
+0025	25 Refaça Trans.	Registro não Encontrado
+0026	Bandeira Não Roteada	Ocorre quando está configurado no D-TEF para não aceitar
+0027	PDV Não Cadastrado	Ocorre quando está configurado no D-TEF para não aceitar
+0030	30 Refaça Trans.	Erro de Formato
+0031	31 Probl.cartão	Instituição Não Pertence à Rede
+0032	Usuário Inválido	Ocorre quando a operação no client exige usuário e senha
+0033	Senha Inválida	Ocorre quando a operação no client exige usuário e senha
+0034	Usuário Sem Permissão	Ocorre quando a operação no client exige usuário e senha
+0035	Senha Já Utilizada	Ocorre quando é alterada a senha do usuário para uma senha
+0038	38 Probl.cartão	Excedido Número de Tentativas do PIN
+0039	39 Conta Inval.	Número da Conta Inválido
+0041	41 Probl.cartão	Cartão Extraviado
+0043	43 Probl.cartão	Cartão Roubado
+0049	49 não passa cartão com chip	Está na versão L0201 e não L0205
+0051	51 Excede Limite	Saldo Insuficiente
+0052	52 Probl.cartão	Conta Corrente Não Cadastrada
+0054	54 Probl.cartão	Não Autorizado - Cartão Vencido
+0055	55 Senha Inval.	Senha Incorreta
+0057	57 Probl.cartão	Transação não permitida a este cartão.
+0058	58 Excede Limite. Igual ao erro 51	Saldo Insuficiente
+0059	59 Conta Inval.	Conta Irregular
+0060	60 Ligue cartão	Entrar em Contato com a Instituição
+0061	61 Excede Limite	Excedido Limite de Saque
+0065	65 Excede Limite	Excedido Freqüência de Saque
+0068	Transação Repetida	Ocorre quando é realizada uma transações seguidas no
+0069	Data Validade	Ocorre quando a data de validade do cartão é inválida.
+0070	Forma Entrada	Ocorre quando é identificada a forma de entrada da transação
+0071	Sequencial Cartão	Houve um erro ao ler o número sequencial do cartão.
+0072	Trilha2	Ocorre quando o D-TEF identifica falha na trilha2 do cartão.
+0073	Resposta Chip	Chip do cartão retornou dados inválidos.
+0074	Código Produto	Código do produto não foi informado.
+0075	75	Transação negada pelo Banco Emissor
+0076	76 Probl.cartão	Cartão Bloqueado
+0077	Estornada	Operação não pode ser executada porque a transação está
+0079	79 Probl. Banco	Transação Não Permitida Neste Ciclo
+0083	83 Refaça Trans.	Time-out
+0084	84 Refaça Trans.	Log-On (Terminal não aberto)
+0085	85 Refaça Trans.	Problema Rede Local
+0087	87 Falta Cartão	Cartão Obrigatório na Transação
+0089	Transação Cancelada	Operação não pode ser executada porque a transação está
+0090	Versão Tabelas	Ocorre quando a versão das tabelas do Client D-POS não
+0091	91 Refaça Trans.	Instituição Temporariamente Fora de Operação
+0093	Pinpad Não Cadastrado	Ocorre quando é utilizado algum PinPad não homologado
+0094	Versão D-POS não permitida	Ocorre quando é utilizado alguma versão do Client D-POS
+0098	Genérico	Erro genérico.
+T056	56 Probl.cartão	Cartão Sem Registro
+T088	Offline Negada	Ocorre quando a transação é negada pelo cartão.
+T092	Dados Inválidos	Ocorre quando aos dados coletadas no Client DPOS e enviados
+0078	Transaction does not exist	A transação que o cliente busca, não existe na base da Rede. Possíveis causas Tentativa de consulta ou cancelamento após 60 dias da data de transação. A base de dados do e-commerce da Rede só disponibiliza as transações com até 60 dias, para consulta via API. No portal é possível visualizar por mais tempo.
+T083	Unauthorized. Contact issuer.	Não autorizado. O emissor não informou o motivo, por favor, entre em contato com o emissor.
+T098	tid: Invalid parameter format	O dado do campo TID não está no formato correto. Formato correto: Alfanumérico
