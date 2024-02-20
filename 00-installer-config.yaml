@@ -6,7 +6,8 @@ network:
       dhcp4: no
       dhcp6: no
       addresses: [192.168.15.230/24] # Colocar o ip desejado
-      routes:
+      gateway4: 192.168.15.1 # Ubuntu =< 18.04
+      routes: # Ubuntu => 20.04
         - to: default
           via: 192.168.15.1 # colocar o ip do GATEWAY
       nameservers:
