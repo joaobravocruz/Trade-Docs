@@ -1,0 +1,51 @@
+mysql 
+
+para acessar o banco de dados no localhost
+
+mysql -p -u root 
+
+se não for no localhost
+
+mysql -p -u root -h (ip do servidor) 
+
+--------------------------------------------
+
+para copiar o banco de dados localhost
+
+mysqldump -p -u root (nome do banco de dados) --quick --single-transaction > c:\(pasta que deseja salvar)\(nome do banco de dado.sql) 
+
+fora do localhost 
+
+mysqldump -p -u root -h (ip do servidor) (nome do banco de dados) --quick --single-transaction > c:\(pasta que deseja salvar)\(nome do banco de dado.sql) 
+
+-----------------------------------------------
+
+subir pro banco de dados localhost
+
+mysql -p -u root (nome do banco de dados) < c:\(pasta que está o banco de dados)\(banco de dados.sql)
+
+subir banco de dados fora do localhost 
+
+mysql -p -u root -h (ip do servidor) (nome do banco de dados) < c:\(pasta que está o banco de dados)\(banco de dados.sql)
+
+
+------------------------------------------------
+
+verificar se tem tabela corrompida localhost
+
+mysqlcheck -p -u root (nome do banco de dados) 
+
+
+verificar se tem tabela comrrompida fora do localhost
+
+mysqlcheck -p -u root -h (ip do servidor) (nome do banco de dados) 
+
+---------------------------------------------------
+
+reparar banco de dado localhost 
+
+mysqlcheck -p -u root (nome do banco de dados) --auto-repair
+
+reparar banco de dados fora do localhost 
+
+mysqlcheck -p -u root -h (ip do servidor) (nome do banco de dados) --auto-repair
