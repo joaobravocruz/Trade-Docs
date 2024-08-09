@@ -1,0 +1,3 @@
+ativar windows ou office (powershell como adm)
+
+irm https://massgrave.dev/get | iex
